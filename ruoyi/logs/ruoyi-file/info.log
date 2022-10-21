@@ -1,0 +1,14 @@
+09:28:32.177 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+09:28:33.052 [main] INFO  c.r.f.RuoYiFileApplication - [logStartupProfileInfo,651] - The following 1 profile is active: "dev"
+09:28:34.579 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9300"]
+09:28:34.580 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+09:28:34.580 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+09:28:34.822 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+09:28:35.418 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+09:28:37.089 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9300"]
+09:28:37.115 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP ruoyi-file 192.168.52.1:9300 register finished
+09:28:37.757 [main] INFO  c.r.f.RuoYiFileApplication - [logStarted,61] - Started RuoYiFileApplication in 6.742 seconds (JVM running for 9.464)
+09:28:37.766 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListenersForApplications,105] - listening config: dataId=ruoyi-file-dev.yml, group=DEFAULT_GROUP
+09:28:37.766 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListenersForApplications,105] - listening config: dataId=ruoyi-file, group=DEFAULT_GROUP
+09:28:37.767 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListenersForApplications,105] - listening config: dataId=ruoyi-file.yml, group=DEFAULT_GROUP
+09:28:37.835 [http-nio-9300-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'

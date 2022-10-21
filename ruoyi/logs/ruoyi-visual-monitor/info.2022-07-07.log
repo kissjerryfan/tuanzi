@@ -1,0 +1,22 @@
+20:11:14.032 [main] INFO  c.r.m.m.RuoYiMonitorApplication - [logStartupProfileInfo,651] - The following 1 profile is active: "dev"
+20:11:15.065 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9100"]
+20:11:15.065 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+20:11:15.065 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+20:11:15.254 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+20:11:15.690 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+20:11:24.815 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9100"]
+20:11:42.860 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Pausing ProtocolHandler ["http-nio-9100"]
+20:11:42.860 [main] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+20:11:42.866 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Stopping ProtocolHandler ["http-nio-9100"]
+20:11:42.868 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Destroying ProtocolHandler ["http-nio-9100"]
+20:18:40.286 [main] INFO  c.r.m.m.RuoYiMonitorApplication - [logStartupProfileInfo,651] - The following 1 profile is active: "dev"
+20:18:41.260 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9100"]
+20:18:41.260 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+20:18:41.260 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+20:18:41.433 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+20:18:41.844 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+20:18:50.835 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9100"]
+20:19:08.911 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Pausing ProtocolHandler ["http-nio-9100"]
+20:19:08.912 [main] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+20:19:08.917 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Stopping ProtocolHandler ["http-nio-9100"]
+20:19:08.919 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Destroying ProtocolHandler ["http-nio-9100"]

@@ -1,0 +1,16 @@
+23:27:07.310 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+23:27:08.418 [main] INFO  c.r.f.RuoYiFileApplication - [logStartupProfileInfo,651] - The following 1 profile is active: "dev"
+23:27:10.013 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9300"]
+23:27:10.013 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+23:27:10.014 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+23:27:10.295 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+23:27:11.330 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+23:27:14.122 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9300"]
+23:27:14.148 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,75] - nacos registry, DEFAULT_GROUP ruoyi-file 192.168.52.1:9300 register finished
+23:27:14.790 [main] INFO  c.r.f.RuoYiFileApplication - [logStarted,61] - Started RuoYiFileApplication in 8.533 seconds (JVM running for 11.26)
+23:27:14.799 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListenersForApplications,105] - listening config: dataId=ruoyi-file-dev.yml, group=DEFAULT_GROUP
+23:27:14.800 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListenersForApplications,105] - listening config: dataId=ruoyi-file, group=DEFAULT_GROUP
+23:27:14.800 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListenersForApplications,105] - listening config: dataId=ruoyi-file.yml, group=DEFAULT_GROUP
+23:27:14.965 [RMI TCP Connection(3)-192.168.5.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:49:59.072 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,94] - De-registering from Nacos Server now...
+23:49:59.079 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,114] - De-registration finished.

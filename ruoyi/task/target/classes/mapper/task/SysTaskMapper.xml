@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.task.mapper.SysTaskMapper">
+
+    <resultMap type="SysTask" id="SysTaskResult">
+        <result property="taskId"    column="task_id"    />
+        <result property="taskClass"    column="task_class"    />
+        <result property="taskContent"    column="task_content"    />
+        <result property="taskStarttime"    column="task_startTime"    />
+        <result property="taskEndtime"    column="task_endTime"    />
+        <result property="taskRemark"    column="task_remark"    />
+    </resultMap>
+
+    <sql id="selectSysTaskVo">
+        select task_id, task_class, task_content, task_startTime, task_endTime, task_remark from sys_task
+    </sql>
+
+    <select id="selectSysTaskList" parameterType="SysTask" resultMap="SysTaskResult">
+        <include refid="selectSysTaskVo"/>
+        <where>
+            <if test="taskClass != null  and taskClass != ''"> and task_class like concat('%', #{taskClass}, '%')</if>
+            <if test="taskContent != null  and taskContent != ''"> and task_content = #{taskContent}</if>
+            <if test="taskStarttime != null "> and task_startTime like concat('%', #{taskStarttime}, '%')</if>
+            <if test="taskEndtime != null "> and task_endTime like concat('%', #{taskEndtime}, '%')</if>
+        </where>
+    </select>
+
+    <select id="selectSysTaskByTaskId" parameterType="Long" resultMap="SysTaskResult">
+        <include refid="selectSysTaskVo"/>
+        where task_id = #{taskId}
+    </select>
+
+    <insert id="insertSysTask" parameterType="SysTask" useGeneratedKeys="true" keyProperty="taskId">
+        insert into sys_task
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="taskClass != null">task_class,</if>
+            <if test="taskContent != null">task_content,</if>
+            <if test="taskStarttime != null">task_startTime,</if>
+            <if test="taskEndtime != null">task_endTime,</if>
+            <if test="taskRemark != null">task_remark,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="taskClass != null">#{taskClass},</if>
+            <if test="taskContent != null">#{taskContent},</if>
+            <if test="taskStarttime != null">#{taskStarttime},</if>
+            <if test="taskEndtime != null">#{taskEndtime},</if>
+            <if test="taskRemark != null">#{taskRemark},</if>
+        </trim>
+    </insert>
+
+    <update id="updateSysTask" parameterType="SysTask">
+        update sys_task
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="taskClass != null">task_class = #{taskClass},</if>
+            <if test="taskContent != null">task_content = #{taskContent},</if>
+            <if test="taskStarttime != null">task_startTime = #{taskStarttime},</if>
+            <if test="taskEndtime != null">task_endTime = #{taskEndtime},</if>
+            <if test="taskRemark != null">task_remark = #{taskRemark},</if>
+        </trim>
+        where task_id = #{taskId}
+    </update>
+
+    <delete id="deleteSysTaskByTaskId" parameterType="Long">
+        delete from sys_task where task_id = #{taskId}
+    </delete>
+
+    <delete id="deleteSysTaskByTaskIds" parameterType="String">
+        delete from sys_task where task_id in
+        <foreach item="taskId" collection="array" open="(" separator="," close=")">
+            #{taskId}
+        </foreach>
+    </delete>
+</mapper>
